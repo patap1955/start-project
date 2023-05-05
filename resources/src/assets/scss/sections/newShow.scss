@@ -1,0 +1,123 @@
+#newShow  {
+    background: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.new-show {
+    max-width: 850px;
+
+    &__title {
+        margin-top: 70px;
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 130%;
+        color: #490D0C;
+    }
+
+    &__content {
+        margin-top: 40px;
+
+        h2 {
+            margin: 30px 0;
+            font-size: 36px;
+            line-height: 49px;
+            color: #490D0C;
+        }
+
+        h2, h3, h4, h5, h6 {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 800;
+        }
+
+        h3, h4, h5, h6 {
+            margin: 25px 0;
+            line-height: 160%;
+            color: #490D0C;
+        }
+
+        h3 {
+            font-size: 28px;
+            line-height: 160%;
+            color: #490D0C;
+        }
+
+        h4 {
+            font-size: 26px;
+        }
+
+        h5 {
+            font-size: 22px;
+        }
+
+        h6 {
+            font-size: 18px;
+        }
+
+        a {
+            line-height: 160%;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            color: #490D0C;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            transition: all .3s ease;
+
+            &:hover {
+                color: #C81F04;
+                text-decoration: none;
+            }
+        }
+
+        p {
+            line-height: 160%;
+            color: #0F0000;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            padding: 0 0 0 25px;
+            list-style-type: none;
+
+            li {
+                list-style-type: none;
+                list-style-image: url("../assets/img/bulit.svg");
+                padding-inline-start: 1ch;
+            }
+        }
+    }
+}
+
+.breadcrumbs {
+    display: flex;
+
+    &__link {
+        a {
+            font-size: 18px;
+            line-height: 160%;
+            color: #0F0000;
+            transition: all .3s ease;
+
+            &:hover {
+                color: #C81F04;
+            }
+        }
+        span {
+            padding: 0 10px;
+            font-size: 18px;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 160%;
+        color: #DED7D7;
+    }
+}

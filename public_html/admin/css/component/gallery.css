@@ -1,0 +1,27 @@
+.image-success, .foto-gallery {
+    margin-top: 30px;
+}
+
+.image-success__list, .foto-gallery__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.image-success__item, .foto-gallery__item {
+    width: 100%;
+}
+
+.img-block {
+    height: 250px;
+}
+
+.img-block img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.input-block {
+    margin-top: 15px;
+}

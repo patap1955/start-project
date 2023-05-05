@@ -1,0 +1,66 @@
+.baths__popup {
+    max-width: min(1260px, 90%);
+    min-width: 530px;
+    max-height: 85vh;
+    height: 100%;
+
+    @media only screen and (max-width: $px1024) {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    p {
+        margin-top: 40px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    table {
+        display: block;
+        border-collapse: collapse;
+        width: 100%;
+
+        @media only screen and (max-width: $px1024) {
+            word-break: break-all;
+        }
+    }
+
+    td,
+    th {
+        border: 1px solid #0F0000;
+        text-align: left;
+        padding: 15px 30px;
+        max-width: 360px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        min-width: 120px;
+
+        @media only screen and (max-width: $px768) {
+            padding: 5px 10px;
+        }
+    }
+
+    th {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    tr {
+        td:first-child {
+            font-weight: 800;
+        }
+    }
+
+    tr:last-child {
+        td {
+            font-weight: 800;
+        }
+    }
+}

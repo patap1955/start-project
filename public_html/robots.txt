@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /amg-admin/
+Disallow: /assets/
+Disallow: /adminlte/
+Disallow: /cgi-bin

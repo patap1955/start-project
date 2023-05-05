@@ -1,0 +1,56 @@
+.laundry__popup {
+    max-width: min(1100px, 90%);
+    min-width: 530px;
+    max-height: 85vh;
+    height: 100%;
+
+    @media only screen and (max-width: $px1024) {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 40px;
+
+
+        @media only screen and (max-width: $px1024) {
+            word-break: break-all;
+        }
+    }
+
+    td,
+    th {
+        border: 1px solid #0F0000;
+        text-align: left;
+        padding: 15px 30px;
+        max-width: 200px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+
+        @media only screen and (max-width: $px768) {
+            padding: 5px 10px;
+        }
+
+        &:first-child {
+            font-weight: 800;
+            max-width: 400px;
+        }
+    }
+
+    th {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 27px;
+    }
+}

@@ -1,0 +1,21 @@
+.mobile-menu__close-btn {
+  display: none;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  background-color: #00110A00;
+  border: none;
+  z-index: 4;
+
+  @media (max-width: 1165px) {
+    &-active {
+      display: block;
+    }
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+    max-width: unset;
+  }
+}

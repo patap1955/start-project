@@ -1,0 +1,136 @@
+.about {
+    display: flex;
+    justify-content: center;
+    min-height: unset;
+
+    @media (max-width: $px768) {
+        justify-content: flex-start;
+    }
+
+    &__content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 80px;
+
+        @media (max-width: $px1024) {
+            align-items: center;
+            flex-direction: column;
+            padding-top: 70px;
+        }
+    }
+
+    &__text {
+        max-width: 600px;
+        margin: auto 0;
+        flex: 1;
+        margin-right: 40px;
+
+        @media (max-width: $px1024) {
+            width: 100%;
+            max-width: unset;
+            margin: auto 0;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: $px768) {}
+
+        &-title {
+            font-size: 45px;
+        }
+
+        &-dop {
+            margin-top: 20px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 27px;
+            color: #490D0C;
+        }
+
+        h2 {
+            margin-bottom: 40px;
+
+            @media (max-width: $px480) {
+                // text-align: center;
+            }
+        }
+
+        p {
+            position: relative;
+
+            @media (max-width: $px480) {
+                // text-align: center;
+            }
+        }
+    }
+
+    &__image {
+        flex: 1;
+        max-width: 650px;
+        display: flex;
+        align-items: center;
+        // background-color: green;
+
+        @media (max-width: $px1024) {
+            max-width: unset;
+            width: 100%;
+        }
+
+        @media (max-width: $px768) {
+            max-width: unset;
+            margin-top: unset;
+        }
+    }
+
+    &__image-col-1 {
+        margin-right: 10px;
+
+        @media (max-width: $px1024) {
+            width: 100%;
+            flex: 1;
+        }
+    }
+
+    &__image-col-2 {
+        @media (max-width: $px1024) {
+            width: 100%;
+            flex: 1;
+        }
+    }
+
+    &__img1,
+    &__img4 {
+        @media only screen and (max-width: $px1024) {
+            height: 450px;
+        }
+
+        @media only screen and (max-width: $px768) {
+            height: 400px;
+        }
+
+        @media only screen and (max-width: $px480) {
+            height: 250px;
+        }
+    }
+
+    &__img2,
+    &__img3 {
+        @media only screen and (max-width: $px1024) {
+            height: 300px;
+        }
+
+        @media only screen and (max-width: $px768) {
+            height: 200px;
+        }
+
+        @media only screen and (max-width: $px480) {
+            height: 150px;
+        }
+    }
+
+    img {
+        border-radius: 10px;
+    }
+}

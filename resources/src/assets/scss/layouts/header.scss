@@ -1,0 +1,86 @@
+.header {
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  padding: 0 30px;
+
+
+  //@media (max-width: $navhide) {
+  //  position: absolute;
+  //}
+
+  @media (max-width: $px768) {
+    padding: 0 20px;
+  }
+}
+
+
+.header__content {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  margin: 0 auto;
+
+  @media (max-width: $px768) {
+    justify-content: flex-start;
+  }
+}
+
+.header__logo {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+
+  @media (max-width: $px768) {
+    margin-right: auto;
+  }
+
+
+}
+
+.header__logo-fixed {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+}
+
+.header__phone {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+  transition: all 0.4s;
+  white-space: nowrap;
+  transition: all 0.4s;
+
+  @media (max-width: $navhide) {
+    margin-right: 90px;
+  }
+
+  @media (max-width: 580px) {
+    position: fixed;
+    top: -40%;
+    left: 50%;
+    transform: translate(-50%);
+    margin-right: 10px;
+  }
+}
+
+.header__phone-mobile {
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%);
+
+  @media (max-width: 420px) {
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%);
+  }
+}
