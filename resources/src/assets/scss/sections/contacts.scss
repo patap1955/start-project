@@ -1,107 +1,94 @@
 #contacts {
-  @media only screen and (max-width: $px768) {
-    padding: 0;
-  }
+    margin-top: 100px;
 }
 
 .contacts {
-
-  // padding: 0 20px;
-  @media only screen and (max-width: $px768) {
-    align-items: center;
-    flex-direction: column;
-  }
-
-  &__text {
-    position: absolute;
-    top: 30px;
-    left: -1vw;
-    display: flex;
-    justify-content: center;
-    min-height: 380px;
-    z-index: 1;
-
-    @media only screen and (max-width: $px768) {
-      position: static;
-      max-width: unset;
+    &__title {
+        font-size: 60px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #180000;
     }
 
-    @media only screen and (max-width: $px360) {
-      min-height: 400px;
-    }
-
-    &-container {
-      display: flex;
-      flex-direction: column;
-      padding: 70px 42px 80px;
-      max-width: 530px;
-      background-color: white;
-      border-radius: 10px;
-
-      &-phones {
+    &__info {
+        margin-top: 50px;
         display: flex;
-        flex-direction: column;
-        row-gap: 15px;
+        column-gap: 80px;
 
-        &-faild {
-          display: grid;
-          grid-template-columns: 100px auto;
-          column-gap: 30px;
+        @media (max-width: 1225px) {
+            column-gap: 50px;
         }
 
-        p {
-          font-family: 'Open Sans';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 20px;
-          line-height: 160%;
-          color: #490D0C;
+        @media (max-width: 767px) {
+            flex-direction: column;
+            row-gap: 30px;
         }
-      }
 
-      &-from {
-        margin-top: 30px;
-      }
+        &-item {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
 
-      @media only screen and (max-width: $px768) {
-        // position: absolute;
-        width: 100vw;
-        max-width: unset;
-        padding: 0 0 80px 20px;
-      }
+            &-name {
+                font-size: 18px;
+                line-height: 160%;
+                color: #714848;
+            }
 
+            &-from {
+                @media (max-width: 1023px) {
+                    width: 285px;
+                }
+            }
 
+            &-field {
+                display: flex;
+                column-gap: 40px;
+
+                @media (max-width: 1285px) {
+                    flex-direction: column;
+                    row-gap: 15px;
+                }
+
+                &-phone {
+                    font-family: 'Comfortaa';
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 160%;
+                    color: #180000;
+                    transition: all .3s ease;
+
+                    &:hover {
+                        color: #E4382E;
+                    }
+                }
+
+                &-email {
+                    font-family: 'Comfortaa';
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 160%;
+                    color: #180000;
+                    transition: all .3s ease;
+
+                    &:hover {
+                        color: #E4382E;
+                    }
+                }
+
+                &-text {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 160%;
+                    color: #180000;
+                }
+            }
+        }
     }
-
-    h2 {
-      margin-bottom: 40px;
-
-      @media only screen and (max-width: $px480) {
-        font-weight: 500;
-        font-size: 50px;
-        line-height: 130%;
-      }
-    }
-
-    //a:first-of-type {
-    //  margin-bottom: 15px;
-    //}
-    //
-    //a:last-of-type {
-    //  margin-bottom: 30px;
-    //}
-  }
-
-  &__map {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    min-height: 600px;
-  }
 }
 
-#ymaps {
-  position: absolute;
-  width: 100vw;
-  height: 600px;
+.map {
+    margin-top: 50px;
+    width: 100%;
+    height: 510px;
 }

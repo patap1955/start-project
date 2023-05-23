@@ -1,5 +1,6 @@
 @import "vars";
-// @import "normalize";
-@import "_reset";
+@import "normalize";
+@import "reset";
+@import "smart-grid";
 @import "base";
-@import "breakpoints.scss";
+@import "bootstrap";

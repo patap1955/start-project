@@ -1,0 +1,122 @@
+#first-screen {
+    margin-top: 40px;
+}
+
+.first-screen {
+    &__title {
+        text-align: center;
+        font-size: 70px;
+        line-height: 100%;
+        text-align: center;
+        color: #180000;
+
+        @media (max-width: 1290px) {
+            font-size: 60px;
+        }
+
+        @media (max-width: 1190px) {
+            font-size: 56px;
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 50px;
+        }
+
+        @media (max-width: 840px) {
+            font-size: 45px;
+        }
+
+        @media (max-width: 320px) {
+            font-size: 42px;
+        }
+
+        span {
+            font-size: 76px;
+            line-height: 100%;
+            text-transform: uppercase;
+            color: #E4382E;
+
+            @media (max-width: 1290px) {
+                font-size: 68px;
+            }
+
+            @media (max-width: 1190px) {
+                font-size: 64px;
+            }
+
+            @media (max-width: 1024px) {
+                font-size: 58px;
+            }
+
+            @media (max-width: 840px) {
+                font-size: 40px;
+            }
+
+            @media (max-width: 768px) {
+                display: inline-block;
+            }
+
+            @media (max-width: 320px) {
+                font-size: 38px;
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+            row-gap: 40px;
+        }
+
+        &-text {
+            width: 654px;
+            font-size: 18px;
+            line-height: 160%;
+            color: #000000;
+
+            @media (max-width: 992px) {
+                text-align: center;
+            }
+
+            @media (max-width: 700px) {
+                width: 100%;
+            }
+        }
+
+        &-button {
+            display: flex;
+        }
+    }
+
+    &__img {
+
+        background: url("../img/first-screen-img.jpg") 100%/100% no-repeat ;
+        background-position: top -120px right 0px;
+        //background-position: center top -25px;
+        background-size: cover;
+        height: 500px;
+        margin-top: 60px;
+
+        @media (max-width: 1024px) {
+            height: 300px;
+            background-position: center top -25px;
+        }
+
+        @media (max-width: 510px) {
+            background: url("../img/first-screen-img-1.jpg") 100%/100% no-repeat center center fixed ;
+            background-position: center top 0px;
+            //background-position: center top -25px;
+            //background-size: unset;
+        }
+
+        //@media (max-width: 480px) {
+        //    background-position: bottom -67px right 0px;
+        //}
+
+    }
+}

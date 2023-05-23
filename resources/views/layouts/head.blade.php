@@ -9,6 +9,6 @@
     <title>@yield("title")</title>
     {{-- <link rel="stylesheet" href="{{ asset('/fonts/nextArt/stylesheet.css') }}">--}}
     <link rel="stylesheet" href="{{ asset('/fonts/myFonts.css') }}">
-    <link rel="stylesheet" href="{{ mix('/assets/css/main.css') }}">
+    @vite(['resources/src/assets/main.scss', 'resources/js/app.js'])
     @yield("css")
 </head>

@@ -1,18 +1,18 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-e69a5c17.css",
+    "file": "assets/app-d6f4bbf6.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
   "resources/js/app.css": {
-    "file": "assets/app-91c77935.css",
+    "file": "assets/app-e6eeffea.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
     "css": [
-      "assets/app-91c77935.css"
+      "assets/app-e6eeffea.css"
     ],
-    "file": "assets/app-7f3f00eb.js",
+    "file": "assets/app-57caafc8.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
@@ -21,32 +21,8 @@
     "isEntry": true,
     "src": "resources/sass/app.scss"
   },
-  "resources/src/assets/img/bulit.svg": {
-    "file": "assets/bulit-3ecc08b8.svg",
-    "src": "resources/src/assets/img/bulit.svg"
-  },
-  "resources/src/assets/img/hero-bg.jpg": {
-    "file": "assets/hero-bg-68469649.jpg",
-    "src": "resources/src/assets/img/hero-bg.jpg"
-  },
-  "resources/src/assets/img/mask1.svg": {
-    "file": "assets/mask1-092fc244.svg",
-    "src": "resources/src/assets/img/mask4.svg"
-  },
-  "resources/src/assets/img/mask2.jpg": {
-    "file": "assets/mask2-1aa5d77f.jpg",
-    "src": "resources/src/assets/img/mask2.jpg"
-  },
-  "resources/src/assets/img/mask3.svg": {
-    "file": "assets/mask3-3e367d90.svg",
-    "src": "resources/src/assets/img/mask3.svg"
-  },
-  "resources/src/assets/img/mask4.svg": {
-    "file": "assets/mask1-092fc244.svg",
-    "src": "resources/src/assets/img/mask4.svg"
-  },
   "resources/src/assets/main.scss": {
-    "file": "assets/main-c5eff2f5.css",
+    "file": "assets/main-7ccbdb4c.css",
     "isEntry": true,
     "src": "resources/src/assets/main.scss"
   }

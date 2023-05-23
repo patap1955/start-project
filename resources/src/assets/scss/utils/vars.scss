@@ -1,11 +1,12 @@
-$bg-white: #FCFBFB;
-$font-brown: #490D0C;
-$font-black: #0F0000;
-$font-red: #C81F04;
-$font-dark-grey: #2D2D2D;
-$merriweatherSans: 'Merriweather Sans';
-$slovic: 'Slovic';
-$bath-column: "1350px";
-$bath-schedule-column: "710px";
-$laundry-column: "1370px";
+// Font
+$mainFont                : 'AvenirNextCyr-Demi', Helvetica, Arial, sans-serif;
+
+// Size
+$mainFontColor           : #101010;
+
+:root {
+    --animate-duration: 1.5s !important;
+    --animate-delay: .3s;
+    --animate-repeat: 1;
+}
 

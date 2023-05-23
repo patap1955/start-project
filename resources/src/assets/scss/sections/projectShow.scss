@@ -1,0 +1,132 @@
+#projectShow {
+    margin-top: 50px;
+}
+
+.projectShow {
+    &__breadcrumbs {
+        display: flex;
+        @media (max-width: 768px) {
+            display: none;
+        }
+         &-field {
+             a {
+                 font-family: 'Comfortaa';
+                 font-style: normal;
+                 font-weight: 400;
+                 font-size: 16px;
+                 line-height: 160%;
+                 color: #000000;
+                 transition: all .3s ease;
+
+                 &:hover {
+                     color: #E4382E;
+                 }
+             }
+
+             span {
+                 padding: 0 10px;
+                 font-size: 16px;
+             }
+
+             p {
+                 font-family: 'Comfortaa';
+                 font-style: normal;
+                 font-weight: 400;
+                 font-size: 16px;
+                 line-height: 160%;
+                 text-align: center;
+                 color: #714848;
+             }
+         }
+    }
+
+    &__title {
+        margin-top: 30px;
+        font-size: 76px;
+        line-height: 78px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #180000;
+
+        @media (max-width: 768px) {
+            line-height: 140%;
+            font-size: 60px;
+        }
+
+        @media (max-width: 480px) {
+            line-height: 140%;
+            font-size: 48px;
+        }
+
+        @media (max-width: 375px) {
+            line-height: 140%;
+            font-size: 36px;
+        }
+    }
+
+    &__about {
+        padding: 100px 0;
+        display: grid;
+        grid-template-columns: 295px auto;
+        column-gap: 150px;
+        justify-content: space-between;
+
+        @media (max-width: 992px) {
+            display: flex;
+            flex-direction: column;
+            row-gap: 50px;
+        }
+
+        &-title {
+            font-size: 60px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: #180000;
+
+            @media (max-width: 768px) {
+                font-size: 48px;
+            }
+
+            @media (max-width: 480px) {
+                font-size: 36px;
+            }
+
+            @media (max-width: 480px) {
+                font-size: 28px;
+            }
+        }
+
+        &-content {
+            p {
+                margin-bottom: 15px;
+                font-size: 18px;
+                line-height: 160%;
+                color: #180000;
+            }
+        }
+    }
+
+    &__portfolio {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @media (max-width: 480px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &-img {
+            width: 100%;
+            height: 36.5vw;
+
+            @media (max-width: 480px) {
+                height: 100%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

@@ -1,136 +1,97 @@
+#about {
+    margin-top: 100px;
+}
+
 .about {
-    display: flex;
-    justify-content: center;
-    min-height: unset;
+    &__info {
+        display: grid;
+        grid-template-columns: 345px auto;
+        column-gap: 95px;
 
-    @media (max-width: $px768) {
-        justify-content: flex-start;
-    }
-
-    &__content {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 80px;
-
-        @media (max-width: $px1024) {
-            align-items: center;
+        @media (max-width: 1023px) {
+            display: flex;
             flex-direction: column;
-            padding-top: 70px;
+            row-gap: 50px;
         }
-    }
-
-    &__text {
-        max-width: 600px;
-        margin: auto 0;
-        flex: 1;
-        margin-right: 40px;
-
-        @media (max-width: $px1024) {
-            width: 100%;
-            max-width: unset;
-            margin: auto 0;
-            margin-bottom: 40px;
-        }
-
-        @media (max-width: $px768) {}
 
         &-title {
-            font-size: 45px;
+            font-size: 60px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: #180000;
         }
 
-        &-dop {
-            margin-top: 20px;
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 800;
-            font-size: 20px;
-            line-height: 27px;
-            color: #490D0C;
+        &-block {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
         }
 
-        h2 {
-            margin-bottom: 40px;
-
-            @media (max-width: $px480) {
-                // text-align: center;
-            }
-        }
-
-        p {
-            position: relative;
-
-            @media (max-width: $px480) {
-                // text-align: center;
-            }
+        &-text {
+            font-size: 18px;
+            line-height: 160%;
+            color: #180000;
         }
     }
 
-    &__image {
-        flex: 1;
-        max-width: 650px;
+    &__number {
+        margin-top: 100px;
         display: flex;
-        align-items: center;
-        // background-color: green;
+        justify-content: space-between;
 
-        @media (max-width: $px1024) {
-            max-width: unset;
-            width: 100%;
+        @media (max-width: 1023px) {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
         }
 
-        @media (max-width: $px768) {
-            max-width: unset;
-            margin-top: unset;
+        &-item {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+
+            &-title {
+                font-size: 76px;
+                line-height: 78px;
+                text-transform: uppercase;
+                color: #E4382E;
+
+                @media (max-width: 1023px) {
+                    text-align: center;
+                }
+
+                @media (max-width: 1120px) {
+                    font-size: 58px;
+                }
+
+                @media (max-width: 1023px) {
+                    text-align: center;
+                }
+
+                @media (max-width: 420px) {
+                    font-size: 40px;
+                    line-height: 41px;
+                }
+            }
+
+            &-text {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 160%;
+                color: #180000;
+
+                @media (max-width: 1023px) {
+                    text-align: center;
+                }
+
+                br {
+                    display: none;
+
+                    @media (max-width: 520px) {
+                        display: block;
+                    }
+                }
+            }
         }
-    }
-
-    &__image-col-1 {
-        margin-right: 10px;
-
-        @media (max-width: $px1024) {
-            width: 100%;
-            flex: 1;
-        }
-    }
-
-    &__image-col-2 {
-        @media (max-width: $px1024) {
-            width: 100%;
-            flex: 1;
-        }
-    }
-
-    &__img1,
-    &__img4 {
-        @media only screen and (max-width: $px1024) {
-            height: 450px;
-        }
-
-        @media only screen and (max-width: $px768) {
-            height: 400px;
-        }
-
-        @media only screen and (max-width: $px480) {
-            height: 250px;
-        }
-    }
-
-    &__img2,
-    &__img3 {
-        @media only screen and (max-width: $px1024) {
-            height: 300px;
-        }
-
-        @media only screen and (max-width: $px768) {
-            height: 200px;
-        }
-
-        @media only screen and (max-width: $px480) {
-            height: 150px;
-        }
-    }
-
-    img {
-        border-radius: 10px;
     }
 }
